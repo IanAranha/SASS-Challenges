@@ -1,50 +1,24 @@
-<html>
-    <head>
-        <title>Bootstrap Self Project</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-        <link rel='styleshee' href='Animate.css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <script>
-            $(document).ready(function(){
-                $('#target1').css('color', 'red');
-                $("#target1").prop("disabled", true);
-                $('#target4').html('<em>#target4</em>');
-                $("#target5").remove();
-                $("#target2").appendTo("#right-well");
-                $('#target6').clone().appendTo("#left-well")
-                $("#target1").parent().css("background-color", "red");
-                $('#right-well').children().css('color', 'orange');
-                $('.target:nth-child(2)').addClass('animated bounce');
-                $(".target:even").addClass("animated shake");
-                $("body").addClass("animated fadeOut");
-                $("body").addClass("animated hinge");
-                
+<style type='text/sass'>
+  
+  
+  .header{
+    text-align: center;
+  }
+  .blog-post, h2 {
+    color: red;
+  }
+</style>
 
-            });
-        </script>
-        <div class='container-fluid'>
-            <h3 class='text-primary text-center'>jQuery Playground</h3>
-            <div class='row'>
-                <div class='col-xs-6'>
-                    <h4>#left-well</h4>
-                    <div class='well' id='left-well'>
-                        <button id='target1' class='btn btn-default target'>#target1</button>
-                        <button id='target2' class='btn btn-default target'>#target2</button>
-                        <button id='target3' class='btn btn-default target'>#target3</button>
-                    </div>
-                </div>
-                <div class='col-xs-6'>
-                    <h4>#right-well</h4>
-                    <div class='well' id='right-well'>
-                        <button id='target4' class='btn btn-default target'>#target4</button>
-                        <button id='target5' class='btn btn-default target'>#target5</button>
-                        <button id='target6' class='btn btn-default target'>#target6</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<h1 class="header">Learn Sass</h1>
+<div class="blog-post">
+  <h2>Some random title</h2>
+  <p>This is a paragraph with some random text in it</p>
+</div>
+<div class="blog-post">
+  <h2>Header #2</h2>
+  <p>Here is some more random text.</p>
+</div>
+<div class="blog-post">
+  <h2>Here is another header</h2>
+  <p>Even more random text within a paragraph</p>
+</div>
